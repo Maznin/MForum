@@ -1,0 +1,21 @@
+.forum-sidebar ul {
+  list-style: none;
+  font-size: 0.87rem;
+  padding-left: 1rem;
+}
+
+.widget {
+  border-top: 5px solid $primary;
+  background: $light-gray;
+  border-radius: 4px;
+
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.widget-title {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 6px;
+}

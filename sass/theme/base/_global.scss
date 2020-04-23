@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 60px;
+}
+
+body {
+  font-size: $font-size-base;
+  background: $body-bg;
+}
+
+a {
+  color: $link-black;
+}
+
+label {
+  margin: 0;
+}

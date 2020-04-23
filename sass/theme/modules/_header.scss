@@ -1,0 +1,31 @@
+#site-header {
+  background: $primary;
+
+  a {
+    color: #fff;
+  }
+
+  .navbar {
+    background: $primary-dark;
+    padding: 0;
+  }
+
+  .login-link,
+  .register-link,
+  .logout-link {
+    background: $primary-darker;
+  }
+
+  .dashicons {
+    color: #fff;
+    margin-right: 5px;
+  }
+
+  .nav-link {
+    padding: 13px 10px;
+  }
+}
+
+.site-title {
+  padding: 4.5rem;
+}

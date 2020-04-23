@@ -1,0 +1,218 @@
+// BBpress plugin CSS styles override
+
+#bbpress-forums ul.bbp-forums,
+#bbpress-forums ul.bbp-topics {
+  border: none;
+}
+
+#bbpress-forums li.bbp-header {
+  background: $primary;
+  border-radius: 10px 10px 0 0;
+}
+
+.bbp-forum-info {
+  position: relative;
+}
+
+.bbp-forum-info > a,
+.bbp-topic-title > a {
+  font-size: 1.08rem;
+}
+
+#bbpress-forums .bbp-forum-info .bbp-forum-content {
+  color: $forum-info-content;
+  font-size: 0.87rem;
+  margin-bottom: 1.3rem;
+  margin-top: 0;
+}
+
+#bbpress-forums .bbp-forum-info .bbp-forum-content,
+.bbp-forum-info > a {
+  padding-left: 3rem;
+}
+
+#bbpress-forums .bbp-forums-list .bbp-forum {
+  font-size: 0.8rem;
+  display: block;
+  padding-left: 3.5rem;
+}
+
+#bbpress-forums .bbp-forums-list .bbp-forum a {
+  color: $link-black-lighter;
+}
+
+#bbpress-forums li.bbp-body {
+  padding: 10px;
+  background: $light-gray;
+}
+
+#bbpress-forums li.bbp-header {
+  font-size: $font-size-base;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#bbpress-forums li.bbp-body ul:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+#bbpress-forums li.bbp-body > ul:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+#bbpress-forums li.bbp-body ul.forum {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+  padding-top: 14px;
+}
+
+.bbp-body .bbp-forum-topic-count,
+.bbp-body .bbp-forum-reply-count,
+.bbp-body .bbp-topic-voice-count,
+.bbp-body .bbp-topic-reply-count {
+  font-size: 21px;
+  color: $forum-info-content;
+}
+
+// .bbp-body .bbp-forum-freshness {
+//   font-size: 14px;
+// }
+
+#bbpress-forums p.bbp-topic-meta {
+  font-size: 0.87rem;
+  color: $forum-info-content;
+}
+
+#bbpress-forums .bbp-topic-content,
+#bbpress-forums .bbp-reply-content {
+  font-size: 14px;
+}
+
+// Forum icons
+.forum-icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 7px;
+}
+
+// Remove forum footer (not the site footer)
+.bbp-footer {
+  display: none;
+}
+
+//Breadcrumbs
+.bbp-breadcrumb {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: baseline;
+}
+
+div.bbp-breadcrumb {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+//Breadcrumb icon
+div.bbp-breadcrumb:before {
+  font-size: 1.1rem;
+  font: normal 16px/1 "dashicons";
+  content: "\f102";
+  margin-right: 5px;
+  float: left;
+  padding-top: 3px;
+  color: $link-black;
+}
+
+// Forum search input and button
+#bbpress-forums #bbp-search-form #bbp_search {
+  height: 37px;
+  padding-left: 10px;
+  border-radius: 20px 0 0 20px;
+  width: 200px;
+  border: 1px solid $search-input-border;
+  background: $light-gray;
+  outline-color: transparent;
+}
+
+#bbp_search::placeholder {
+  color: $icon-gray;
+  font-size: 14px;
+}
+
+#bbp_search_submit {
+  height: 37px;
+  border-radius: 0 20px 20px 0;
+  border: 1px solid $search-input-border;
+  border-left-width: 0;
+  background: $light-gray;
+  padding: 0 10px;
+  color: $icon-gray;
+}
+
+// Login form
+.bbp-login-form {
+  width: 40%;
+  margin: 0 auto;
+  background: #fff;
+  border-top: 2px solid $primary;
+  padding: 2rem;
+  color: $forum-info-content;
+  box-shadow: 0px 6px 23px 1px rgba(0, 0, 0, 0.28);
+}
+
+.bbp-login-form label {
+  width: auto;
+}
+
+.bbp-login-form .bbp-username,
+.bbp-login-form .bbp-password,
+.bbp-login-form .bbp-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.bbp-login-form .bbp-password,
+.bbp-login-form .bbp-remember-me,
+.bbp-login-form .bbp-submit-wrapper,
+.bbp-login-form .bbp-email {
+  margin-top: 18px;
+}
+
+.bbp-form input {
+  padding-left: 10px;
+  @include form-border;
+  background: $light-gray;
+  outline-color: transparent;
+}
+
+//Login button
+div.bbp-submit-wrapper {
+  float: none;
+}
+
+.bbp-login-form .bbp-submit-wrapper {
+  width: 100%;
+}
+
+.bbp-login-form .bbp-submit-wrapper .user-submit {
+  width: 100%;
+  display: block;
+  background: $primary;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 7px 0;
+}
+
+//Forgot pass link
+.login-forgot-link {
+  padding-top: 15px;
+  margin-top: 30px;
+  border-top: 1px solid $search-input-border;
+}
+
+.login-forgot-link a {
+  color: $link-black-lighter;
+}
